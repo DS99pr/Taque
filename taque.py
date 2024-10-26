@@ -12,12 +12,13 @@ Content:
 Usage:
  To use the Taque list, import the class, create an instance, and perform the operations on it that you have written in the project documentation (located on DS99pr/Taque)
  Example:
+  ```
   from Taque import taque
 
   taqueList = taque([1, 2, 3], "Name For Taque")
   print(taqueList.view()) # [1, 2, 3]
   taqueList.appendFirst(0)
-  print(taqueList.view()) # [0, 1, 2, 3]
+  print(taqueList.view()) # [0, 1, 2, 3]```
 Author:
  @DS99pr, a.k.a. __ds99__
 Created on:
@@ -30,13 +31,10 @@ For bug reports or suggestions, please open an issue on the GitHub repository.
 
 class taque:
      '''A Taque list is a new custom data type in which the m.in index starts with 1. Taque is very similar to the Deque list, but it has its differences.'''
-     def __init__(self, obj: list, name: str = None):
+     def __init__(self, obj: list, name: str = "Default"):
          '''If you do not specify a name for the Taque list, the system will automatically replace it with "Default"'''
          self.__taque__ = obj
-         if name: 
-          self.name = name
-         else:
-          self.name = "Default"
+         self.name = name
      def view(self):
          '''Returns the contents of a Taque list'''
          return self.__taque__
@@ -100,3 +98,15 @@ class taque:
      def changeName(self, newName: str):
        '''Renames a Taque list'''
        self.name = newName
+     def changeTaqueList(self, newList: list):
+       self.__taque__ = newList
+     def editElement(self, index: int, newElement):
+      '''Edits an item in a Taque list using an index'''
+      try:
+       if len(self.__taque__) != 0:
+        self.__taque__.remove(self.__taque__[index-1])
+        self.__taque__.insert(index-1, newElement)
+       else:
+        raise exceptions.BlankTaqueError("The taque is empty - this operation cannot be performed") 
+      except IndexError:
+       raise exceptions.OutOfRangeError("Item not found with this index - this operation cannot be performed")
