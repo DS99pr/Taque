@@ -2,7 +2,7 @@
 - **name**: **The Taque list name**
 - **taque(obj=list, name=str)**: **Creates a Taque list**
 - **view()**: **Displays the entire Taque list**
-- **look()**: **Display a Taque list item using an index**
+- **look(index=int)**: **Display a Taque list item using an index**
 - **first()**: **Displays the first item in the Taque list**
 - **last()**: **Displays the last item in the Taque list**
 - **appendFirst(obj)**: **Adds an element to the top of the Taque list**
