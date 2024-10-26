@@ -1,3 +1,5 @@
+import exceptions
+
 '''The Taque list.
 
 Description:
@@ -21,19 +23,10 @@ Author:
 Created on:
  25.10.2024
 Last updated:
- 25.10.2024
+ 26.10.2024
 
 For bug reports or suggestions, please open an issue on the GitHub repository.
 '''
-
-class exceptions:
-    class BlankTaqueError(Exception):
-          '''Error triggered when the user tries to perform an operation on the Taque list, but the Taque list is empty'''
-          pass
-    
-    class OutOfRangeError(Exception):
-          '''Error triggered when a user tries to perform an operation on a given index, but the index is not included in the Taque list'''
-          pass
 
 class taque:
      '''A Taque list is a new custom data type in which the m.in index starts with 1. Taque is very similar to the Deque list, but it has its differences.'''
