@@ -14,6 +14,7 @@
 - **sort(reversed=bool)**: **Sorts the Taque list**
 - **changeName(newName=str)**: **Renames a Taque list**
 - **editElement(index=int, newElement)**: **Edits an item in Taque list**
+- **changeTaqueList(newList=list)**: **Changes the ENTIRE Taque list**
 # Errors documentation:
 - **exceptions.BlankTaqueError**: **Error triggered when the user tries to perform an operation on the Taque list, but the Taque list is empty**
 - **exceptions.OutOfRangeError**: **Error triggered when a user tries to perform an operation on a given index, but the index is not included in the Taque list**
