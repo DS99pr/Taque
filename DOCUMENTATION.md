@@ -1,4 +1,5 @@
 # Documentation:
+- **name**: **The Taque list name**
 - **taque(obj=list, name=str)**: **Creates a Taque list**
 - **view()**: **Displays the entire Taque list**
 - **look()**: **Display a Taque list item using an index**
@@ -12,6 +13,7 @@
 - **removeSpecific(index=int)**: **Removes an element from a specific index in a Taque list**
 - **sort(reversed=bool)**: **Sorts the Taque list**
 - **changeName(newName=str)**: **Renames a Taque list**
+- **editElement(index=int, newElement)**: **Edits an item in Taque list**
 # Errors documentation:
 - **exceptions.BlankTaqueError**: **Error triggered when the user tries to perform an operation on the Taque list, but the Taque list is empty**
 - **exceptions.OutOfRangeError**: **Error triggered when a user tries to perform an operation on a given index, but the index is not included in the Taque list**
