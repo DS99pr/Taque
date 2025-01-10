@@ -20,7 +20,7 @@ Usage:
   taqueList.appendFirst(0)
   print(taqueList.view()) # [0, 1, 2, 3]```
 Author:
- @DS99pr, a.k.a. __ds99__
+ @DS99pr, a.k.a. ds
 Created on:
  25.10.2024
 Last updated:
